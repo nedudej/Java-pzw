@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<head>
+    <meta charset="UTF-8"/>
+    <title>$Title$</title>
+</head>
+<body>
+<table>
+    <thead>
+    <tr>
+        <td>Username</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td th:text="${account.username}"></td>
+        <td th:each="role : ${account.roles}" th:text="${role.name}"></td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
+<th:block th:fragment="header">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+        <link rel="icon" href="../../favicon.ico"/>
+        <title th:text="#{page.title}">Tytuł strony</title>
+
+        <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+              th:href="@{/webjars/bootstrap/3.3.6/css/bootstrap.min.css}" rel="stylesheet" media="screen"/>
+        <script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.1/jquery.min.js"
+                th:src="@{/webjars/jquery/2.2.1/jquery.min.js}"></script>
+        <script  src="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/js/bootstrap.min.js"
+                 th:src="@{/webjars/bootstrap/3.3.6/js/bootstrap.min.js}"></script>
+
+    </head>
+</th:block>
+</html>
